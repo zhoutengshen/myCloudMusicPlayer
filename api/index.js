@@ -10,9 +10,7 @@ router.get('/api/musicUrl', function (req, res) {
         br: br,
         csrf_token: ''
     }
-    const cookie = req.get('Cookie') ? req.get('Cookie') : ''
-
-
+    const cookie = req.get('Cookie') ? req.get('Cookie') : "_ntes_nuid=038b3c4130946536e03848366e762aa6"
     createWebAPIRequest(
         'music.163.com',
         '/weapi/song/enhance/player/url',
